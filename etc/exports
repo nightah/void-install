@@ -1,0 +1,23 @@
+# /etc/exports
+#
+# List of directories exported to NFS clients.  See exports(5).
+# Use exportfs -arv to reread.
+#
+# Example for NFSv2 and NFSv3:
+#  /srv/home       hostname1(rw,sync) hostname2(ro,sync)
+#
+# Example for NFSv4:
+#  /srv/nfs4       hostname1(rw,sync,fsid=0)
+#  /srv/nfs4/home   hostname1(rw,sync,nohide)
+# Using Kerberos and integrity checking:
+#  /srv/nfs4        gss/krb5i(rw,sync,fsid=0,crossmnt)
+#  /srv/nfs4/home   gss/krb5i(rw,sync,nohide)
+#
+
+/Anime 10.10.10.0/24(rw,no_subtree_check,no_root_squash)
+/Movies 10.10.10.0/24(rw,no_subtree_check,no_root_squash)
+/Music 10.10.10.0/24(rw,no_subtree_check,no_root_squash)
+/TV 10.10.10.0/24(rw,no_subtree_check,no_root_squash)
+/srv/tftp/pxelinux.cfg 10.10.10.0/24(rw,no_subtree_check,no_root_squash)
+
+/NERV 10.0.0.0/24(insecure,rw,async,crossmnt,no_subtree_check,no_root_squash)

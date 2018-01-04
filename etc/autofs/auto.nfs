@@ -1,0 +1,24 @@
+# This is an automounter map and it has the following format
+# key [ -mount-options-separated-by-comma ] location
+# Details may be found in the autofs(5) manpage
+
+/Anime              -bind   :/mnt/NERV01/Anime
+/Movies             -bind   :/mnt/NERV01/Movies
+/Music              -bind   :/mnt/NERV01/Music
+/TV                 -bind   :/mnt/NERV01/TV
+
+/NERV/Anime         -bind   :/mnt/NERV01/Anime
+/NERV/Applications  -bind   :/mnt/NERV01/Applications
+/NERV/.Backups      -bind   :/mnt/NERV01/.Backups
+/NERV/Books         -bind   :/mnt/NERV01/Books
+/NERV/.config       -bind   :/mnt/NERV01/.config
+/NERV/.Databases    -bind   :/mnt/NERV01/.Databases
+/NERV/Games         -bind   :/mnt/NERV01/Games
+/NERV/Movies        -bind   :/mnt/NERV01/Movies
+/NERV/Music         -bind   :/mnt/NERV01/Music
+/NERV/Porn          -bind   :/mnt/NERV01/Porn
+/NERV/Repos         -bind   :/mnt/NERV01/Repos
+/NERV/Sports        -bind   :/mnt/NERV01/Sports
+/NERV/.srv          -bind   :/mnt/NERV01/.srv
+/NERV/.TMP          -bind   :/mnt/NERV01/.TMP
+/NERV/TV            -bind   :/mnt/NERV01/TV
