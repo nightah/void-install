@@ -341,6 +341,7 @@ nerv/ROOT/void@04012018-fresh      0      -   316M  -
 ## Install and configure additional packages
 ```
 # xbps-install autofs automysqlbackup avahi borg cronie docker fortune-mod hddtemp git google-authenticator-libpam gvim intel-ucode lm_sensors lsscsi mariadb nfs-utils ntp postfix pigz rsync rxvt-unicode rxvt-unicode-terminfo samba smartmontools the_silver_searcher tftp-hpa wget zsh
+```
 ## Credits/Sources
 - [Steppin' Into the Void](http://www.teamcool.net/posts/zol-voidlinux.html)
 - [Installing Arch Linux on ZFS](https://wiki.archlinux.org/index.php/Installing_Arch_Linux_on_ZFS)
