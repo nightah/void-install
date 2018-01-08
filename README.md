@@ -143,7 +143,7 @@ If this command fails and you are asked to import your pool via its numeric ID, 
 ## Install Void Linux
 - Install the base system:
 ```
-# xbps-install -S -R https://repo.voidlinux.eu/current -r /mnt basesystem grub intel-ucode zfs
+# xbps-install -S -R https://repo.voidlinux.eu/current -r /mnt base-system grub intel-ucode zfs
 ```
 - Copy the hostid file we created above:
 ```
