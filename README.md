@@ -331,6 +331,10 @@ nerv/ROOT/void on / type zfs (rw,relatime,xattr,noacl)
 # ln -s /etc/sv/dhcpcd /var/service/
 # ln -s /etc/sv/sshd /var/service/
 ```
+- Create user:
+```
+useradd -m -s /bin/bash -U -G wheel,audio,video,cdrom,input amir
+```
 - Snaphot your fresh install:
 ```
 # zfs snapshot nerv/ROOT/void@04012018-fresh
@@ -340,10 +344,23 @@ nerv/ROOT/void@04012018-fresh      0      -   316M  -
 ```
 ## Install and configure additional packages
 ```
-# xbps-install autofs avahi borg cronie docker docker-compose fortune-mod hddtemp git google-authenticator-libpam gvim-huge intel-ucode lm_sensors mailx netcat net-tools nfs-utils ntp postfix rsync rxvt-unicode rxvt-unicode-terminfo samba smartmontools socklog-void the_silver_searcher tftp-hpa unzip wget zsh
+# xbps-install autofs avahi borg cronie docker docker-compose fortune-mod git google-authenticator-libpam gvim-huge hddtemp intel-ucode lm_sensors mailx net-tools netcat nfs-utils ntp postfix rsync rxvt-unicode rxvt-unicode-terminfo samba smartmontools socklog-void tftp-hpa the_silver_searcher unzip wget zsh
 ```
+- Configure additional permissions:
+```
+# usermod -aG docker,socklog amir
+```
+- Configure Samba:
+```
+# useradd -r -u 1050 -g 1050 -s /usr/bin/nologin samba
+# smbpasswd -a samba
+# smbpasswd -a amir
+# usermod -aG samba amir
+```
+
 ## Credits/Sources
 - [Steppin' Into the Void](http://www.teamcool.net/posts/zol-voidlinux.html)
 - [Installing Arch Linux on ZFS](https://wiki.archlinux.org/index.php/Installing_Arch_Linux_on_ZFS)
 ## Version
 - **04/01/18:** Initial Release
+- **14/01/18:** Updated with additional configuration and updated application configs for Void

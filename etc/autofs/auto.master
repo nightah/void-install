@@ -1,8 +1,7 @@
+#
 # Sample auto.master file
-# Format of this file:
-# mountpoint map options
-# For details of the format look at autofs(5).
-
-#/media /etc/autofs/auto.media
+# This is a 'master' automounter map and it has the following format:
+# mount-point [map-type[,format]:]map [options]
+# For details of the format look at auto.master(5).
 
 /-   /etc/autofs/auto.nfs

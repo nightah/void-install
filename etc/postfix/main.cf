@@ -58,7 +58,7 @@ command_directory = /usr/bin
 # daemon programs (i.e. programs listed in the master.cf file). This
 # directory must be owned by root.
 #
-daemon_directory = /usr/lib/postfix/bin
+daemon_directory = /usr/libexec/postfix
 
 # The data_directory parameter specifies the location of Postfix-writable
 # data files (caches, random numbers). This directory must be owned
@@ -677,7 +677,7 @@ sample_directory = /etc/postfix
 readme_directory = /usr/share/doc/postfix
 inet_protocols = ipv4
 meta_directory = /etc/postfix
-shlib_directory = /usr/lib/postfix
+shlib_directory = no
 
 # Custom Config
 relayhost = 172.22.1.1
