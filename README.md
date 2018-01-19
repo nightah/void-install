@@ -352,6 +352,7 @@ nerv/ROOT/void@04012018-fresh      0      -   316M  -
 ```
 - Configure Samba:
 ```
+# groupadd -r -g 1050 samba
 # useradd -r -u 1050 -g 1050 -s /usr/bin/nologin samba
 # smbpasswd -a samba
 # smbpasswd -a amir
