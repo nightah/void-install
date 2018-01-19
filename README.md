@@ -363,5 +363,6 @@ nerv/ROOT/void@04012018-fresh      0      -   316M  -
 - [Steppin' Into the Void](http://www.teamcool.net/posts/zol-voidlinux.html)
 - [Installing Arch Linux on ZFS](https://wiki.archlinux.org/index.php/Installing_Arch_Linux_on_ZFS)
 ## Version
-- **04/01/18:** Initial Release
+- **20/01/18:** Updated samba configuration steps and included zfs zed config
 - **14/01/18:** Updated with additional configuration and updated application configs for Void
+- **04/01/18:** Initial Release
